@@ -5,9 +5,9 @@ const config: { [key: string]: Knex.Config } = {
         client: 'pg',
         connection: {
             host: 'localhost',
-            database: 'mysecretdb',
-            user: 'postgres',
-            password: 'postgres'
+            database: 'mysecret',
+            user: 'admin',
+            password: 'admin'
         },
         migrations: {
             directory: './migrations',
@@ -17,12 +17,14 @@ const config: { [key: string]: Knex.Config } = {
         client: 'pg',
         connection: {
             host: 'localhost',
-            database: 'mysecretdb',
-            user: 'postgres',
-            password: 'postgres'
+            database: 'mysecret',
+            user: 'admin',
+            password: 'admin'
         },
         migrations: {
             directory: './migrations',
         }
     },
 }
+
+export default config;
