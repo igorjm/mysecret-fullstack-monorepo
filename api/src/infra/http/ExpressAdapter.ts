@@ -14,12 +14,12 @@ export default class ExpressAdapter implements HttpServer {
         this.app.use(bodyParser.json());
         this.app.use('/api', (req, res) => {
             res.json({ message: 'hi' });
-        })
+        });
     }
 
     listen(port: number): void {
         this.app.listen(port, () => {
             console.log(`Server running at port ${port}`);
-        })
+        });
     }
 }

@@ -1,4 +1,8 @@
 import LoadEnv from "@infra/helper/LoadEnv";
-// import UserEntity from "@domain/entity/UserEntity";
+import ExpressAdapter from "@infra/http/ExpressAdapter";
 
 LoadEnv.load();
+
+const expressAdapter = new ExpressAdapter();
+
+expressAdapter.listen(3000);
